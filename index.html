@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interior</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="./public/css/main.css">
+
+</head>
+
+<body>
+    <!--Navigation-->
+    <nav class="nav">
+        <section class="nav-col">
+            <span class="logo">THIS INTERIOR</span>
+            <a class="menu-button material-icons" onclick="myFunction()">menu</a>
+        </section>
+
+        <section class="nav-col-right">
+            <ul class="nav-menu">
+                <li class="item"><a href="#" class="link">Home</a></li>
+                <li class="item"><a href="#" class="link">Collection</a></li>
+                <li class="item"><a href="#" class="link">About</a></li>
+                <li class="item"><a href="#" class="link">Contact</a></li>
+            </ul>
+        </section>
+
+    </nav>
+    <nav id="collapsed" class="collapsed">
+        <ul class="nav-menu-mb">
+            <li class="item-mb"><a href="#" class="link-mb">Home</a></li>
+            <li class="item-mb"><a href="#" class="link-mb">Collection</a></li>
+            <li class="item-mb"><a href="#" class="link-mb">About</a></li>
+            <li class="item-mb"><a href="#" class="link-mb">Contact</a></li>
+        </ul>
+    </nav>
+    <!--Content-->
+    <section class="container">
+        <article class="information">
+            <h1>Modern Interior</h1>
+            <p class="description">
+                A full-Service residencial & <br> commercial interior design and <br> staging company offering <br> professional organizing & <br> eco-services.
+            </p>
+            <strong>
+                <a href="#" class="read-more">
+                    Read more <span class="icon material-icons"> east </span>
+                </a>
+
+            </strong>
+        </article>
+        <article class="image">
+            <img src="./public/images/photo1.png" alt="back" class="background">
+            <article class="info">
+                <img src="./public/images/photo2.png" alt="picture" class="person">
+                <div class="text-info">
+                    <strong class="name">Aliza Webber</strong><br>
+                    <span class="muted">Interior designed</span>
+                </div>
+
+                <div class="auth">
+                    <h2>
+                        Designed in 2020 <br> by Aliza Webber
+                    </h2>
+                </div>
+            </article>
+        </article>
+    </section>
+    <footer class="footer">
+        <div class="line"></div>
+        <p>
+            <a href="http://github.com/emmanuelurbina" class="author">@Emmanuel Lucio Urbina</a>
+        </p>
+    </footer>
+    <script>
+        function myFunction() {
+            var x = document.getElementById("collapsed");
+            var menu = document.querySelector(".menu-button")
+            var logo = document.querySelector(".logo");
+            var footer = document.querySelector(".footer")
+            var container = document.querySelector(".container")
+            if (x.style.display === "block") {
+                x.style.display = "none";
+                logo.style.display = "block";
+                container.style.display = "block";
+                footer.style.display = "block";
+                menu.innerHTML = "menu"
+            } else {
+                x.style.display = "block";
+                menu.innerHTML = "close"
+                container.style.display = "none";
+                logo.style.display = "none";
+                footer.style.display = "none"
+            }
+        }
+    </script>
+</body>
+
+</html>
