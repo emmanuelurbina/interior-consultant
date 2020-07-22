@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
 body {
     background-color: #2b2a2a;
 }
@@ -69,6 +70,7 @@ h1 {
 .nav-menu,
 .nav-menu-mb {
     list-style: none;
+    font-family: 'Roboto', sans-serif;
 }
 
 .nav-menu-mb {
